@@ -1,0 +1,74 @@
+Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+
+Primitive data types
+
+STRING 
+NUMBER
+BOOL
+NULL
+UNDEFINED
+
+- Sequence of characters enclosed with in single or double quotes or back ticks (String)
+- It stores all the number data types such as integer (Number)
+- True or false for conditional statements (Bool)
+- any variable declared but not initialized (undefined)
+
+Code:
+let str1 = ("Double quotes");
+console.log(str1);
+console.log(typeof str1);
+
+let str2 = 'single quotes';
+console.log(str2);
+console.log(typeof(str2));
+let str3 = `template literals`;
+console.log(str3);
+console.log(typeof(str3));
+
+let num = 10.345678;
+console.log(num , typeof(num));
+
+let bool = true;
+console.log(bool , typeof(bool));
+
+let a1;
+console.log(a , typeof(a1));
+
+let b1 = null;
+console.log(b , typeof(b1));
+
+let a2;
+console.log(a2); //undefined variable dosent have a value
+
+let b2 = null;
+console.log(b); // no value present in it
+console.log(typeof b2); //object : bug in JS since ages
+
+
+
+Non Primitive data types
+
+1) Functions:
+Reusable code blocks that perform tasks.
+Can return multiple values using arrays or objects.
+code:
+function getInfo() {
+    return { name: "Alex", age: 25 };
+}
+
+let info = getInfo();
+console.log(info.name); // Output: Alex
+console.log(info.age);  // Output: 25
+
+2) Arrays
+Store multiple values in a single variable.
+code:
+let colors = ["Red", "Blue", "Green"];
+console.log(colors[0]); // Output: Red
+
+3) Objects:
+Store key-value pairs.
+User-defined and flexible.
+code:
+let car = { brand: "Toyota", year: 2020 };
+console.log(car.brand); // Output: Toyota
