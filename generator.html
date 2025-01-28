@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <form id="userForm">
+    <label for="uname">Username:</label>
+    <input type="text" id="uname" name="uname" required><br><br>
+
+    <label for="upass">Password:</label>
+    <input type="password" id="upass" name="upass" required>
+    <input type="checkbox" id="check">
+    <span id="show">show password</span><br><br>
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="./dynamicelements.js"></script>
+</body>
+</html>
